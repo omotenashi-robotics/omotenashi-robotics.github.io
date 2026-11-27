@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Omotenashi Robotics Engineering & Open Data Portal | おもてなしロボティクス株式会社</title>
-  <meta name="description" content="おもてなしロボティクス株式会社（Omotenashi Robotics Inc.）の技術ドキュメント・オープンデータポータル。東京都足立区の直営工場「おもてなしリネンサプライ」の一次統計データ、Physical AI研究開発、Omotenashi OSの設計情報を公開。" />
+  <meta name="description" content="おもてなしロボティクス株式会社（Omotenashi Robotics Inc.）の技術ドキュメント・オープンデータポータル。足立直営工場「おもてなしリネンサプライ」の実測稼働データ、共同開発基盤「ホームワイン（Homewine）」の世界ワイン格付け183枠・ヴィンテージ統計、Physical AI研究開発を公開。" />
   <link rel="canonical" href="https://omotenashi-robotics.github.io/" />
   <style>
     :root { --navy: #0b1d33; --gold: #c9a24d; --bg: #f8fafc; --text: #0f172a; --muted: #475569; --border: #e2e8f0; }
@@ -90,14 +90,17 @@
         <a href="https://omotenashi-linensupply.co.jp/license/">保健所確認書・工場認可一覧 →</a>
       </div>
       <div class="card">
-        <h3>HOMEWiNE / ホームワイン・アカデミー</h3>
-        <p>自宅に届くワイン学習プログラムと、ソムリエ・ワインエキスパート試験対策データ＆無料100問演習。</p>
-        <a href="https://homewine.jp/academy/">ホームワイン・アカデミー →</a><br/>
-        <a href="https://homewine.jp/academy/100-questions/">ワインエキスパート無料練習問題100選 →</a>
+        <h3>Homewine（共同開発・ワイン学習＆構造化DB基盤）</h3>
+        <p>株式会社WINE TRAILと共同開発・共同運営する自宅ワイン学習プログラム、世界ワイン格付け183枠・AIラベル解析・1,000問CBT演習基盤。</p>
+        <a href="https://homewine.jp/">ホームワイン（Homewine）公式 →</a><br/>
+        <a href="https://homewine.jp/facts/">数字と一次データで見るホームワイン（/facts/） →</a><br/>
+        <a href="https://homewine.jp/store/classifications/">世界のワイン格付け完全台帳（全183枠） →</a><br/>
+        <a href="https://homewine.jp/store/scan/">AIワインソムリエ（ラベル画像・価格解析） →</a><br/>
+        <a href="https://homewine.jp/academy/drill/">ソムリエ・WE試験 一問一答Webドリル1,000問 →</a>
       </div>
     </div>
 
-    <h2>2. オープンデータ：ホテル客室リネン1室1泊コスト構造（標準6品目・税別）</h2>
+    <h2>2. オープンデータ①：ホテル客室リネン1室1泊コスト構造（標準6品目・税別）</h2>
     <p>出典：<a href="https://omotenashi-linensupply.co.jp/facts/">数字で見るおもてなしリネンサプライ（/facts/）</a> ／ GitHub リポジトリ：<a href="https://github.com/omotenashi-robotics/hotel-linen-benchmark">omotenashi-robotics/hotel-linen-benchmark</a>（CC BY 4.0）</p>
     <table>
       <thead>
@@ -126,7 +129,41 @@
       </tbody>
     </table>
 
-    <h2>3. 技術ブログ・外部公式アカウント</h2>
+    <h2>3. オープンデータ②：世界ワイン公式格付け183枠・ヴィンテージ作柄・資格統計（CC BY 4.0）</h2>
+    <p>出典：<a href="https://homewine.jp/facts/">数字と一次データで見るホームワイン（/facts/）</a> ／ GitHub リポジトリ：<a href="https://github.com/omotenashi-robotics/wine-open-benchmarks">omotenashi-robotics/wine-open-benchmarks</a>（CC BY 4.0）</p>
+    <table>
+      <thead>
+        <tr>
+          <th>データセット区分</th>
+          <th>収録規模・網羅範囲</th>
+          <th>インタラクティブWeb台帳</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>世界ワイン公式格付けマスター台帳</td>
+          <td>全183枠（メドック61・ブルゴーニュ特級33・ソーテルヌ27・グラーヴ16・シャンパーニュ特級17村 等）</td>
+          <td><a href="https://homewine.jp/store/classifications/">格付け台帳を見る →</a></td>
+        </tr>
+        <tr>
+          <td>世界20大産地 × 18年分 ヴィンテージ作柄スコア</td>
+          <td>360区画年（2007〜2024年・100点満点スコア・飲み頃フェーズ・収穫気象）</td>
+          <td><a href="https://homewine.jp/store/vintage-chart/">ヴィンテージ表を見る →</a></td>
+        </tr>
+        <tr>
+          <td>日本の食卓100皿 × 5軸味覚ペアリング定量データ</td>
+          <td>全100皿（果実凝縮・酸・タンニン・樽コク・余韻の5軸ベクトル照合）</td>
+          <td><a href="https://homewine.jp/store/pairing/">100皿ペアリング検索 →</a></td>
+        </tr>
+        <tr>
+          <td>J.S.A. 呼称資格認定試験 確定合格率推移</td>
+          <td>ワインエキスパート 26.4% ／ ソムリエ 19.9% ／ SAKE DIPLOMA 31.1%（2025年度確定）</td>
+          <td><a href="https://homewine.jp/academy/wine-expert-level/">合格率・難易度解説 →</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. 技術ブログ・外部公式アカウント</h2>
     <div class="links-list">
       <a href="https://github.com/omotenashi-robotics">GitHub (@omotenashi-robotics)</a>
       <a href="https://huggingface.co/omotenashi-robotics">Hugging Face (@omotenashi-robotics)</a>
